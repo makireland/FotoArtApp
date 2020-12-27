@@ -88,6 +88,7 @@ h3 {
     padding: 10px 10px 20px 20px;
     background-color: #191970;
     color: #fff;
+    margin-top: 100px;
 }
 
 #about h2 {
@@ -220,8 +221,8 @@ footer p {
 
     /* section about */
     #about {
-        height: 250px;
-        height: 30vh;
+        height: 500px;
+        height: 40vh;
         justify-content: center;
         min-height: 250px;
     }
