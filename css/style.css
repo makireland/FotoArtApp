@@ -10,7 +10,7 @@ h3 {
     color: #000000;
 }
 
-.button{
+.button {
     text-decoration: none;
     color: #fff;
     padding: 10px 30px;
@@ -32,6 +32,7 @@ h3 {
     color: #fff;
     font-weight: 800;
     font-size: 2rem;
+    margin-top: 1.2rem;
 }
 
 .nav-menu ul {
@@ -67,6 +68,7 @@ h3 {
     background-position: center;
     color: #fff;
     padding: 1.2rem;
+    text-align: center;
 }
 
 #sub-header h1 {
@@ -97,21 +99,21 @@ h3 {
     max-width: 1000px;
 }
 
-#about .button{
-    background-color:  #f1f1f1;
+#about .button {
+    background-color: #f1f1f1;
     color: #1c1c1c;
 }
 
 /* section services */
 
-#services{
+#services {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
 }
 
-#services .service-img{
+#services .service-img {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,25 +122,25 @@ h3 {
 }
 
 /* section gallery */
-#gallery{
+#gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
-#gallery h2{
+#gallery h2 {
     margin-bottom: 50px;
 }
 
-#gallery img{
+#gallery img {
     margin: 15px;
     width: 100%;
 }
 
 /* section contact */
 
-#contact{
+#contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,13 +148,13 @@ h3 {
     padding: 20px;
 }
 
-#contact h2{
+#contact h2 {
     color: #000000;
 }
 
 /* section footer */
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,7 +163,7 @@ footer{
     background: #191970;
 }
 
-footer > a{
+footer>a {
     text-align: center;
     margin-top: 20px;
     text-decoration: none;
@@ -173,9 +175,112 @@ footer > a{
     transition: all .3s ease-in-out;
 }
 
-footer a:hover{
+footer a:hover {
     background-color: rgba(255, 255, 255, 0.74);
     color: #191970;
     font-weight: 600;
     transition: all .3s ease-in-out;
+}
+
+footer p {
+    color: #fff;
+}
+
+/* media queries */
+
+@media screen and (min-width: 760px) {
+
+    /* nav */
+    .nav-menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-menu>a {
+        margin-top: 0;
+        margin-left: 1.2rem;
+    }
+
+    .nav-menu ul {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /* sub-header */
+    #sub-header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    #sub-header p {
+        text-align: center;
+        max-width: 800px;
+    }
+
+    /* section about */
+    #about {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    /* section services */
+    #services {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #services h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .service-img {
+        justify-content: space-around;
+        margin: 10px;
+        flex-grow: 1;
+        flex-basis: 200px;
+        padding: 0 10px;
+    }
+
+    /* section gallery */
+
+    #gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #gallery h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #gallery img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    /* section contact */
+    #contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contact h2,
+    #contact p {
+        width: 100%;
+    }
 }
